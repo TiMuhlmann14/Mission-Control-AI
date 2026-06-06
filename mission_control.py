@@ -1,11 +1,7 @@
-# ============================================================
-# MISSION CONTROL AI
-# GS2026.1 - Pensamento Computacional e Automação com Python
-# ============================================================
 
 # --- Dados da missão ---
-NOME_MISSAO = "Artemis Deep Scan"
-NOME_EQUIPE  = "Equipe Nebula"
+NOME_MISSAO = "Artemis Deep"
+NOME_EQUIPE  = "Equipe Asaph"
 
 # Matriz principal: [temperatura, comunicacao, bateria, oxigenio, estabilidade]
 # Ciclo 1 — Início da missão         (sistemas estáveis)
@@ -16,6 +12,7 @@ NOME_EQUIPE  = "Equipe Nebula"
 # Ciclo 6 — Tentativa de recuperação (sistemas parcialmente estabilizados)
 # Ciclo 7 — Estabilização progressiva
 # Ciclo 8 — Recuperação confirmada
+
 dados_missao = [
     [22, 95, 91, 98, 93],   # Ciclo 1
     [26, 83, 76, 95, 87],   # Ciclo 2
@@ -36,9 +33,8 @@ areas_monitoradas = [
 ]
 
 
-# ============================================================
+ 
 # FUNÇÕES DE ANÁLISE POR SENSOR
-# ============================================================
 
 def analisar_temperatura(valor):
     """
@@ -107,9 +103,8 @@ def analisar_estabilidade(valor):
         return "NORMAL", 0, "Estabilidade operacional adequada"
 
 
-# ============================================================
+
 # FUNÇÃO: CALCULAR RISCO DO CICLO
-# ============================================================
 
 def calcular_risco_ciclo(ciclo):
     """
@@ -127,9 +122,7 @@ def calcular_risco_ciclo(ciclo):
     return pt + pc + pb + po + pe
 
 
-# ============================================================
 # FUNÇÃO: CLASSIFICAR CICLO
-# ============================================================
 
 def classificar_ciclo(pontuacao):
     """
@@ -146,9 +139,7 @@ def classificar_ciclo(pontuacao):
         return "MISSÃO CRÍTICA"
 
 
-# ============================================================
 # FUNÇÃO: GERAR RECOMENDAÇÃO
-# ============================================================
 
 def gerar_recomendacao(ciclo, pontuacao):
     """
@@ -185,9 +176,7 @@ def gerar_recomendacao(ciclo, pontuacao):
         return "Manter operação normal e continuar monitoramento."
 
 
-# ============================================================
 # FUNÇÃO: ANALISAR TENDÊNCIA DA MISSÃO
-# ============================================================
 
 def analisar_tendencia(riscos):
     """
@@ -202,9 +191,7 @@ def analisar_tendencia(riscos):
         return "A missão permaneceu estável em relação ao início."
 
 
-# ============================================================
 # FUNÇÃO: IDENTIFICAR ÁREA MAIS AFETADA
-# ============================================================
 
 def identificar_area_mais_afetada(dados):
     """
@@ -230,9 +217,7 @@ def identificar_area_mais_afetada(dados):
     return indice_max, pontuacao_area
 
 
-# ============================================================
 # FUNÇÃO: EXIBIR CICLO NO TERMINAL
-# ============================================================
 
 def exibir_ciclo(numero_ciclo, ciclo):
     """
@@ -265,9 +250,7 @@ def exibir_ciclo(numero_ciclo, ciclo):
     return pontuacao
 
 
-# ============================================================
 # FUNÇÃO: RELATÓRIO FINAL
-# ============================================================
 
 def gerar_relatorio_final(dados, riscos):
     """
@@ -347,9 +330,7 @@ def gerar_relatorio_final(dados, riscos):
     print("=" * 60)
 
 
-# ============================================================
 # EXECUÇÃO PRINCIPAL
-# ============================================================
 
 def main():
     print("=" * 60)
