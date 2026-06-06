@@ -1,22 +1,24 @@
-# 🚀 Mission Control AI — Artemis Deep Scan
+# Mission Control AI — Artemis Deep
 
-Sistema inteligente de monitoramento de missão espacial experimental, desenvolvido para a **Global Solution 2026.1** da FIAP.
+Sistema inteligente de monitoramento de missão espacial experimental, desenvolvido para a **Global Solution 2026** da FIAP.
 
 ---
 
-## 📋 Descrição do projeto
+## Descrição do projeto
 
 O **Mission Control AI** simula o monitoramento contínuo de uma missão espacial por meio de ciclos de análise. O sistema avalia cinco sensores críticos da nave — temperatura, comunicação, bateria, oxigênio e estabilidade — a cada ciclo, gera alertas automáticos, calcula o nível de risco e emite um relatório final com a situação da operação.
 
 ---
 
-## 🛰️ Sobre a missão simulada
+## Sobre a missão simulada
 
-| Campo | Informação |
-|---|---|
-| Nome da missão | Artemis Deep Scan |
-| Nome da equipe | Equipe Nebula |
-| Ciclos simulados | 8 |
+**Nome da missão: Artemis Deep**
+
+**Nome da equipe: Equipe Asaph**
+
+**Ciclos simulados: 8** 
+
+
 
 **Narrativa dos ciclos:**
 - Ciclo 1 — Início da missão (sistemas estáveis)
@@ -30,28 +32,7 @@ O **Mission Control AI** simula o monitoramento contínuo de uma missão espacia
 
 ---
 
-## 📁 Estrutura do repositório
-
-```
-mission-control-ai/
-│
-├── README.md
-└── mission_control.py
-```
-
----
-
-## ▶️ Como executar
-
-Não é necessária nenhuma biblioteca externa. Basta ter o Python 3 instalado.
-
-```bash
-python mission_control.py
-```
-
----
-
-## 🗂️ Estrutura dos dados
+## Estrutura dos dados
 
 A matriz principal `dados_missao` é uma lista de listas. Cada linha representa um ciclo da missão, com 5 valores nesta ordem:
 
@@ -69,7 +50,7 @@ A matriz principal `dados_missao` é uma lista de listas. Cada linha representa 
 
 ---
 
-## 🚨 Regras de alerta
+## Regras de alerta
 
 ### Temperatura (°C)
 | Condição | Classificação |
@@ -109,7 +90,7 @@ A matriz principal `dados_missao` é uma lista de listas. Cada linha representa 
 
 ---
 
-## 🔢 Pontuação e classificação de risco
+## Pontuação e classificação de risco
 
 Cada classificação gera uma pontuação:
 
@@ -129,7 +110,7 @@ Com 5 sensores por ciclo, a pontuação máxima por ciclo é **10 pontos**.
 
 ---
 
-## ⚙️ Funções implementadas
+## Funções implementadas
 
 | Função | Descrição |
 |---|---|
@@ -148,35 +129,8 @@ Com 5 sensores por ciclo, a pontuação máxima por ciclo é **10 pontos**.
 
 ---
 
-## 📊 Exemplo de saída
-
-```
-============================================================
-MISSION CONTROL AI
-============================================================
-Missão: Artemis Deep Scan
-Equipe: Equipe Nebula
-Quantidade de ciclos analisados: 8
-============================================================
-
-CICLO 5
-------------------------------------------------------------
-Temperatura:  41 °C  | CRÍTICO  | Risco de superaquecimento
-Comunicação:  25%    | CRÍTICO  | Comunicação com a base em nível crítico
-Bateria:      17%    | CRÍTICO  | Bateria em nível crítico
-Oxigênio:     76%    | CRÍTICO  | Oxigênio em nível crítico
-Estabilidade: 32%    | CRÍTICO  | Estabilidade operacional crítica
-
-Pontuação de risco do ciclo: 10
-Classificação do ciclo: MISSÃO CRÍTICA
-Recomendação: Ativar modo de segurança e priorizar suporte à vida, energia e comunicação.
-```
-
----
-
-## 🎓 Informações acadêmicas
+## Informações acadêmicas
 
 - **Instituição:** FIAP
-- **Curso:** Ciência da Computação
+- **Turma: ** 1CCR
 - **Disciplina:** Pensamento Computacional e Automação com Python
-- **Semestre:** GS2026.1
