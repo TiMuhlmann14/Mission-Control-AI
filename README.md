@@ -132,5 +132,5 @@ Com 5 sensores por ciclo, a pontuação máxima por ciclo é **10 pontos**.
 ## Informações acadêmicas
 
 - **Instituição:** FIAP
-- **Turma: ** 1CCR
+- **Turma:** 1CCR
 - **Disciplina:** Pensamento Computacional e Automação com Python
